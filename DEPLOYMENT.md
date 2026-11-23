@@ -33,7 +33,7 @@ guard left the complete stored plan unchanged. Portal status is separate evidenc
 | Distinct publisher mark | [Assigned actor B recorded Publish successfully](https://explorer-studio-dev.genlayer.com/tx/0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55) at offset `349` seconds within the 600-second horizon; actual Build-to-Publish gap `329` seconds satisfies the 60-second minimum |
 | Terminal persisted result | `COMPLETED`; both authenticated actors, transaction-time gap and residual-feasibility assertions passed; the exact origin and both marks remained unchanged on a later read |
 | Transaction finality | All seven tracked transactions `FINALIZED`: six successful writes and one expected wrong-actor execution rejection with unchanged state; complete proof collected November 23 at 16:22:00 UTC |
-| Portal contribution ID / status | Not submitted yet; no award claimed |
+| Portal contribution ID / status | `c043f6bc-5ab6-4d10-9883-1b1438371295` — [Pending review](https://portal.genlayer.foundation/my-submissions?q=OrderWindow), verified November 23, 2026, with four matching evidence items; no acceptance or award claimed |
 
 ## Minimal runner migration
 
