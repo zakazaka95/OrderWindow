@@ -1,0 +1,174 @@
+{
+  "name": "orderwindow",
+  "checkedAt": "2026-11-23T16:10:55.892Z",
+  "rpc": "https://studio-dev.genlayer.com/api",
+  "chainId": 61997,
+  "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+  "schema": {
+    "ctor": {
+      "params": [],
+      "kwparams": {}
+    },
+    "methods": {
+      "activate_plan": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ],
+          [
+            "expected_receipt_hash",
+            "string"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "null",
+        "payable": false
+      },
+      "compile_plan": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "dict",
+        "payable": false
+      },
+      "expire_plan": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "null",
+        "payable": false
+      },
+      "get_attempt": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ],
+          [
+            "attempt",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "get_feasibility": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "get_plan": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "get_stats": {
+        "params": [],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "open_plan": {
+        "params": [
+          [
+            "title",
+            "string"
+          ],
+          [
+            "purpose",
+            "string"
+          ],
+          [
+            "events_json",
+            "string"
+          ],
+          [
+            "clauses_json",
+            "string"
+          ],
+          [
+            "horizon_seconds",
+            "int"
+          ],
+          [
+            "activation_seconds",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "int",
+        "payable": false
+      },
+      "preview_event": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ],
+          [
+            "event_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": true,
+        "ret": "dict"
+      },
+      "record_event": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ],
+          [
+            "event_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "dict",
+        "payable": false
+      },
+      "retire_plan": {
+        "params": [
+          [
+            "plan_id",
+            "int"
+          ]
+        ],
+        "kwparams": {},
+        "readonly": false,
+        "ret": "null",
+        "payable": false
+      }
+    }
+  },
+  "successful": true
+}

@@ -1,0 +1,116 @@
+{
+  "name": "orderwindow",
+  "chainId": 61997,
+  "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+  "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+  "transactions": [
+    {
+      "stage": "deployment",
+      "hash": "0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d",
+      "successful": true,
+      "url": "https://explorer-studio-dev.genlayer.com/tx/0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d",
+      "finalization": {
+        "hash": "0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d",
+        "successful": true,
+        "status": "FINALIZED",
+        "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d"
+      }
+    },
+    {
+      "stage": "plan-open",
+      "method": "open_plan",
+      "hash": "0xff93bb0774dca64f441ba8d49d3977709e62c238a495b1d2f413116d308d4fff",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "expected_rejection": false,
+      "assertionsPassed": true,
+      "url": "https://explorer-studio-dev.genlayer.com/tx/0xff93bb0774dca64f441ba8d49d3977709e62c238a495b1d2f413116d308d4fff",
+      "finalization": {
+        "hash": "0xff93bb0774dca64f441ba8d49d3977709e62c238a495b1d2f413116d308d4fff",
+        "successful": true,
+        "status": "FINALIZED",
+        "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0xff93bb0774dca64f441ba8d49d3977709e62c238a495b1d2f413116d308d4fff"
+      }
+    },
+    {
+      "stage": "plan-compile",
+      "method": "compile_plan",
+      "hash": "0x9dc21e804580ec68b3764a0b2f2fe120a1076121d72166640ff952ea4d87d19e",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "expected_rejection": false,
+      "assertionsPassed": true,
+      "url": "https://explorer-studio-dev.genlayer.com/tx/0x9dc21e804580ec68b3764a0b2f2fe120a1076121d72166640ff952ea4d87d19e",
+      "finalization": {
+        "hash": "0x9dc21e804580ec68b3764a0b2f2fe120a1076121d72166640ff952ea4d87d19e",
+        "successful": true,
+        "status": "FINALIZED",
+        "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0x9dc21e804580ec68b3764a0b2f2fe120a1076121d72166640ff952ea4d87d19e"
+      }
+    },
+    {
+      "stage": "plan-activate",
+      "method": "activate_plan",
+      "hash": "0xe401c2bd2f1d49862973d5c7d5a9285c32a841accd980452ab61511310292049",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "expected_rejection": false,
+      "assertionsPassed": true,
+      "url": "https://explorer-studio-dev.genlayer.com/tx/0xe401c2bd2f1d49862973d5c7d5a9285c32a841accd980452ab61511310292049",
+      "finalization": {
+        "hash": "0xe401c2bd2f1d49862973d5c7d5a9285c32a841accd980452ab61511310292049",
+        "successful": true,
+        "status": "FINALIZED",
+        "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0xe401c2bd2f1d49862973d5c7d5a9285c32a841accd980452ab61511310292049"
+      }
+    },
+    {
+      "stage": "build-record",
+      "method": "record_event",
+      "hash": "0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "expected_rejection": false,
+      "assertionsPassed": true,
+      "url": "https://explorer-studio-dev.genlayer.com/tx/0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd",
+      "finalization": {
+        "hash": "0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd",
+        "successful": true,
+        "status": "FINALIZED",
+        "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd"
+      }
+    },
+    {
+      "stage": "wrong-actor-publish",
+      "method": "record_event",
+      "hash": "0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+      "successful": false,
+      "intentionalGuardRejection": true,
+      "expected_rejection": true,
+      "assertionsPassed": true,
+      "url": "https://explorer-studio-dev.genlayer.com/tx/0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+      "finalization": {
+        "hash": "0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+        "successful": false,
+        "status": "FINALIZED",
+        "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63"
+      }
+    },
+    {
+      "stage": "publish-record",
+      "method": "record_event",
+      "hash": "0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "expected_rejection": false,
+      "assertionsPassed": true,
+      "url": "https://explorer-studio-dev.genlayer.com/tx/0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55",
+      "finalization": {
+        "hash": "0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55",
+        "successful": true,
+        "status": "FINALIZED",
+        "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55"
+      }
+    }
+  ]
+}

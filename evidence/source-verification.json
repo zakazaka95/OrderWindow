@@ -1,0 +1,38 @@
+{
+  "name": "orderwindow",
+  "chainId": 61997,
+  "rpc": "https://studio-dev.genlayer.com/api",
+  "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+  "contractUrl": "https://explorer-studio-dev.genlayer.com/address/0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+  "deploymentTxHash": "0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d",
+  "deploymentTxUrl": "https://explorer-studio-dev.genlayer.com/tx/0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d",
+  "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+  "normalizedLocalSourceSha256": "1b115b2154e7e505467e7200b90612e3f657922b8581b41bfbf3b02a6ece4363",
+  "normalizedDeployedSourceSha256": "1b115b2154e7e505467e7200b90612e3f657922b8581b41bfbf3b02a6ece4363",
+  "sourceComparison": "Complete source matches after CRLF/LF and edge-whitespace normalization",
+  "completeDeployedSourceMatches": true,
+  "sourceCommit": "52adfb7ce4ea7533aa1db94ce7f81f8bb8443c93",
+  "repository": "https://github.com/zakazaka95/OrderWindow",
+  "immutableSourceUrl": "https://github.com/zakazaka95/OrderWindow/blob/52adfb7ce4ea7533aa1db94ce7f81f8bb8443c93/OrderWindow.py",
+  "sourceHeader": [
+    "# v0.4.0",
+    "# { \"Depends\": \"py-genlayer:kzybg95x1gn21dw72m7hyg0maaap04n4nx55j9yt6fkdqxtz6bz0\" }"
+  ],
+  "sourceVersion": "1.0.0",
+  "transactionValue": "0",
+  "normalConsensus": true,
+  "ownerAddress": "0xF325A1BA370788ea774744C98d16CCcB55155Ac0",
+  "verifiedStats": {
+    "contract_version": "1.0.0",
+    "event_marks": 2,
+    "max_attempts": 3,
+    "max_bounds_per_clause": 4,
+    "max_clauses": 5,
+    "max_events": 5,
+    "max_prompt_chars": 48000,
+    "max_prompt_utf8_bytes": 65000,
+    "plans": 1,
+    "receipt_schema": "orderwindow-v1"
+  },
+  "migration": "Only two runner header lines changed from prepared v0.3 to official v0.4; semantic source body unchanged."
+}

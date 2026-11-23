@@ -1,0 +1,25 @@
+{
+  "stage": "wrong-actor-publish",
+  "hash": "0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+  "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+  "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+  "expected_rejection": true,
+  "status": "FINALIZED",
+  "executionResult": "FINISHED_WITH_ERROR",
+  "observedRollbackReason": "Only its assigned actor may mark an unrecorded event in an active plan",
+  "consensusLeaderObservations": [
+    {
+      "resultStatus": "rollback",
+      "rollbackReason": "Only its assigned actor may mark an unrecorded event in an active plan",
+      "executionResult": "ERROR"
+    },
+    {
+      "resultStatus": "rollback",
+      "rollbackReason": "Only its assigned actor may mark an unrecorded event in an active plan",
+      "executionResult": "ERROR"
+    }
+  ],
+  "storedStateUnchanged": true,
+  "storedBeforeSha256": "2ee546f545d992fa9495fa6b20732d3d79151457a94bd0ff86e40b5ad5fa43f6",
+  "storedAfterSha256": "2ee546f545d992fa9495fa6b20732d3d79151457a94bd0ff86e40b5ad5fa43f6"
+}

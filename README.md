@@ -2,7 +2,11 @@
 
 OrderWindow turns a small technical timing agreement into an exact, bounded difference-constraint graph. GenLayer validators independently translate every frozen clause; a deterministic solver decides whether the graph is consistent. After the owner accepts that exact receipt, assigned actors can record events only when a complete feasible future schedule still exists for every unfinished event.
 
-This is a standalone contract primitive, with no frontend, token, escrow, payout or external execution. It is prepared locally and has not been deployed or submitted. See [DEPLOYMENT.md](DEPLOYMENT.md).
+This is a standalone contract primitive, with no frontend, token, escrow, payout or external execution. **Published November 23, 2026.** Current native source-schema validation, all 36 controlled-output tests and the source-matched deployment succeeded. Application results are recorded only as observed in [DEPLOYMENT.md](DEPLOYMENT.md).
+
+The release pins the native-verified v0.4.0 runner. Only the two runner-header lines changed from the archived preparation; the contract body is unchanged. The [immutable contract source](https://github.com/zakazaka95/OrderWindow/blob/52adfb7ce4ea7533aa1db94ce7f81f8bb8443c93/OrderWindow.py) was independently retrieved and matches the exact released file bytes.
+
+The [live demonstration](evidence/demo-result.json) reaches `COMPLETED` with two distinct actors and a 329-second Build-to-Publish gap against the 60-second minimum. All seven transactions reached `FINALIZED`: six successful writes and one [expected wrong-actor rejection](evidence/guard-execution.json) with unchanged stored state.
 
 ## The failure it prevents
 
@@ -64,7 +68,7 @@ python -m unittest -v test_orderwindow.py
 
 The 36 tests cover negative cycles, exact minimum/maximum gaps, all unfinished event lower bounds, same-second marks, completion, replay/actor checks, immutable activation, permissionless expiry, reverse clocks and rejected-write atomicity. They also mutate every receipt leaf, force independent semantic disagreement, exercise bounded technical retries, reject partial schemas, and inspect maximum-size escaped JSON/Unicode inputs without cutting text.
 
-`testsupport.py` substitutes only a controlled SDK interface and model responses. These results establish local algorithm/state behavior, not deployment success, GenVM compatibility, model performance or production readiness. [STUDIO-TEST.md](STUDIO-TEST.md) gives the deployment and two-actor live verification procedure to perform later.
+`testsupport.py` substitutes only a controlled SDK interface and model responses. These results establish local algorithm/state behavior, not deployment success, model performance or production readiness. Native source-schema validation is separate evidence. [STUDIO-TEST.md](STUDIO-TEST.md) gives the reproducible two-actor procedure; [DEPLOYMENT.md](DEPLOYMENT.md) records actual network observations.
 
 ## Files and license
 

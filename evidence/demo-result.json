@@ -1,0 +1,2922 @@
+{
+  "proofFormat": "public-synthetic-demo-v1",
+  "name": "orderwindow",
+  "chainId": 61997,
+  "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+  "contractUrl": "https://explorer-studio-dev.genlayer.com/address/0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+  "deploymentTxHash": "0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d",
+  "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+  "completeDeployedSourceMatches": true,
+  "syntheticInputsOnly": true,
+  "transactionValue": "0",
+  "normalConsensus": true,
+  "finalizations": [
+    {
+      "hash": "0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d",
+      "successful": true,
+      "status": "FINALIZED",
+      "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0x6cd36fcc0a3699372ce5866dd4556f56225ad513c6e209af7ecff3cd73ec987d",
+      "stage": "deployment",
+      "expected_rejection": false
+    },
+    {
+      "hash": "0xff93bb0774dca64f441ba8d49d3977709e62c238a495b1d2f413116d308d4fff",
+      "successful": true,
+      "status": "FINALIZED",
+      "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0xff93bb0774dca64f441ba8d49d3977709e62c238a495b1d2f413116d308d4fff",
+      "stage": "plan-open",
+      "expected_rejection": false
+    },
+    {
+      "hash": "0x9dc21e804580ec68b3764a0b2f2fe120a1076121d72166640ff952ea4d87d19e",
+      "successful": true,
+      "status": "FINALIZED",
+      "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0x9dc21e804580ec68b3764a0b2f2fe120a1076121d72166640ff952ea4d87d19e",
+      "stage": "plan-compile",
+      "expected_rejection": false
+    },
+    {
+      "hash": "0xe401c2bd2f1d49862973d5c7d5a9285c32a841accd980452ab61511310292049",
+      "successful": true,
+      "status": "FINALIZED",
+      "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0xe401c2bd2f1d49862973d5c7d5a9285c32a841accd980452ab61511310292049",
+      "stage": "plan-activate",
+      "expected_rejection": false
+    },
+    {
+      "hash": "0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd",
+      "successful": true,
+      "status": "FINALIZED",
+      "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd",
+      "stage": "build-record",
+      "expected_rejection": false
+    },
+    {
+      "hash": "0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+      "successful": false,
+      "status": "FINALIZED",
+      "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+      "stage": "wrong-actor-publish",
+      "expected_rejection": true
+    },
+    {
+      "hash": "0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55",
+      "successful": true,
+      "status": "FINALIZED",
+      "explorerUrl": "https://explorer-studio-dev.genlayer.com/tx/0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55",
+      "stage": "publish-record",
+      "expected_rejection": false
+    }
+  ],
+  "steps": [
+    {
+      "stage": "plan-open",
+      "method": "open_plan",
+      "operationHash": "df419a5052ccf40a90b33983ae9177f5388a7f5c0e4d2f7986e78910ba415e46",
+      "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+      "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+      "txHash": "0xff93bb0774dca64f441ba8d49d3977709e62c238a495b1d2f413116d308d4fff",
+      "txUrl": "https://explorer-studio-dev.genlayer.com/tx/0xff93bb0774dca64f441ba8d49d3977709e62c238a495b1d2f413116d308d4fff",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "assertionsPassed": true,
+      "observedAt": "2026-11-23T16:14:46.013Z",
+      "observation": {
+        "attempts": 0,
+        "completed_at": 0,
+        "core": {
+          "activation_until": 1795454077,
+          "clauses": [
+            {
+              "clause_id": 0,
+              "text": "Publish is at least 60 seconds after Build."
+            }
+          ],
+          "events": [
+            {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "description": "Account A declares that the synthetic build milestone is recorded.",
+              "event_id": 1,
+              "name": "Build"
+            },
+            {
+              "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+              "description": "Account B declares that the synthetic publication milestone is recorded.",
+              "event_id": 2,
+              "name": "Publish"
+            }
+          ],
+          "horizon_seconds": 600,
+          "id": 0,
+          "opened_at": 1795450477,
+          "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+          "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+          "title": "Synthetic release declarations"
+        },
+        "expired_at": 0,
+        "expiry_reason": "",
+        "horizon_at": null,
+        "last_observed_at": 1795450477,
+        "marks": {},
+        "origin_at": null,
+        "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+        "receipt": null,
+        "receipt_hash": "",
+        "retired_at": 0,
+        "status": "DRAFT"
+      },
+      "expected_rejection": false
+    },
+    {
+      "stage": "plan-compile",
+      "method": "compile_plan",
+      "operationHash": "5425303c7c3f71abfa5bdb78a90f6d38dc6024763dabea92c37a9a54d25a850c",
+      "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+      "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+      "txHash": "0x9dc21e804580ec68b3764a0b2f2fe120a1076121d72166640ff952ea4d87d19e",
+      "txUrl": "https://explorer-studio-dev.genlayer.com/tx/0x9dc21e804580ec68b3764a0b2f2fe120a1076121d72166640ff952ea4d87d19e",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "assertionsPassed": true,
+      "observedAt": "2026-11-23T16:15:10.079Z",
+      "observation": {
+        "plan": {
+          "attempts": 1,
+          "completed_at": 0,
+          "core": {
+            "activation_until": 1795454077,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "text": "Publish is at least 60 seconds after Build."
+              }
+            ],
+            "events": [
+              {
+                "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                "description": "Account A declares that the synthetic build milestone is recorded.",
+                "event_id": 1,
+                "name": "Build"
+              },
+              {
+                "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                "description": "Account B declares that the synthetic publication milestone is recorded.",
+                "event_id": 2,
+                "name": "Publish"
+              }
+            ],
+            "horizon_seconds": 600,
+            "id": 0,
+            "opened_at": 1795450477,
+            "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+            "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+            "title": "Synthetic release declarations"
+          },
+          "expired_at": 0,
+          "expiry_reason": "",
+          "horizon_at": null,
+          "last_observed_at": 1795450488,
+          "marks": {},
+          "origin_at": null,
+          "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+          "receipt": {
+            "activation_allowed": true,
+            "assessed_at": 1795450488,
+            "attempt": 1,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "constraints": [
+                  {
+                    "from_id": 2,
+                    "max_seconds": -60,
+                    "to_id": 1
+                  }
+                ],
+                "status": "EXACT"
+              }
+            ],
+            "closure": [
+              [
+                0,
+                540,
+                600
+              ],
+              [
+                0,
+                0,
+                600
+              ],
+              [
+                -60,
+                -60,
+                0
+              ]
+            ],
+            "compiled_constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "decision": "COMPILED",
+            "event_windows": [
+              {
+                "earliest_offset": 0,
+                "event_id": 1,
+                "latest_offset": 540
+              },
+              {
+                "earliest_offset": 60,
+                "event_id": 2,
+                "latest_offset": 600
+              }
+            ],
+            "inspection": {
+              "prompt_chars": 3310,
+              "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+              "prompt_truncated": false,
+              "prompt_utf8_bytes": 3310,
+              "semantic_complete": true
+            },
+            "negative_cycle_nodes": [],
+            "plan": {
+              "activation_until": 1795454077,
+              "clauses": [
+                {
+                  "clause_id": 0,
+                  "text": "Publish is at least 60 seconds after Build."
+                }
+              ],
+              "events": [
+                {
+                  "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                  "description": "Account A declares that the synthetic build milestone is recorded.",
+                  "event_id": 1,
+                  "name": "Build"
+                },
+                {
+                  "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                  "description": "Account B declares that the synthetic publication milestone is recorded.",
+                  "event_id": 2,
+                  "name": "Publish"
+                }
+              ],
+              "horizon_seconds": 600,
+              "id": 0,
+              "opened_at": 1795450477,
+              "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+              "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+              "title": "Synthetic release declarations"
+            },
+            "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+            "schema": "orderwindow-v1",
+            "whole_translation": "EXACT"
+          },
+          "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+          "retired_at": 0,
+          "status": "COMPILED"
+        },
+        "attempt": {
+          "activation_allowed": true,
+          "assessed_at": 1795450488,
+          "attempt": 1,
+          "clauses": [
+            {
+              "clause_id": 0,
+              "constraints": [
+                {
+                  "from_id": 2,
+                  "max_seconds": -60,
+                  "to_id": 1
+                }
+              ],
+              "status": "EXACT"
+            }
+          ],
+          "closure": [
+            [
+              0,
+              540,
+              600
+            ],
+            [
+              0,
+              0,
+              600
+            ],
+            [
+              -60,
+              -60,
+              0
+            ]
+          ],
+          "compiled_constraints": [
+            {
+              "from_id": 0,
+              "max_seconds": 600,
+              "to_id": 1
+            },
+            {
+              "from_id": 0,
+              "max_seconds": 600,
+              "to_id": 2
+            },
+            {
+              "from_id": 1,
+              "max_seconds": 0,
+              "to_id": 0
+            },
+            {
+              "from_id": 2,
+              "max_seconds": 0,
+              "to_id": 0
+            },
+            {
+              "from_id": 2,
+              "max_seconds": -60,
+              "to_id": 1
+            }
+          ],
+          "decision": "COMPILED",
+          "event_windows": [
+            {
+              "earliest_offset": 0,
+              "event_id": 1,
+              "latest_offset": 540
+            },
+            {
+              "earliest_offset": 60,
+              "event_id": 2,
+              "latest_offset": 600
+            }
+          ],
+          "inspection": {
+            "prompt_chars": 3310,
+            "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+            "prompt_truncated": false,
+            "prompt_utf8_bytes": 3310,
+            "semantic_complete": true
+          },
+          "negative_cycle_nodes": [],
+          "plan": {
+            "activation_until": 1795454077,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "text": "Publish is at least 60 seconds after Build."
+              }
+            ],
+            "events": [
+              {
+                "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                "description": "Account A declares that the synthetic build milestone is recorded.",
+                "event_id": 1,
+                "name": "Build"
+              },
+              {
+                "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                "description": "Account B declares that the synthetic publication milestone is recorded.",
+                "event_id": 2,
+                "name": "Publish"
+              }
+            ],
+            "horizon_seconds": 600,
+            "id": 0,
+            "opened_at": 1795450477,
+            "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+            "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+            "title": "Synthetic release declarations"
+          },
+          "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+          "schema": "orderwindow-v1",
+          "whole_translation": "EXACT"
+        }
+      },
+      "expected_rejection": false
+    },
+    {
+      "stage": "plan-activate",
+      "method": "activate_plan",
+      "operationHash": "54f20e74d5406d66ac144bc769ee93802fa75aa8449cfd26bb49c51ba9e0da45",
+      "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+      "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+      "txHash": "0xe401c2bd2f1d49862973d5c7d5a9285c32a841accd980452ab61511310292049",
+      "txUrl": "https://explorer-studio-dev.genlayer.com/tx/0xe401c2bd2f1d49862973d5c7d5a9285c32a841accd980452ab61511310292049",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "assertionsPassed": true,
+      "observedAt": "2026-11-23T16:15:24.238Z",
+      "observation": {
+        "plan": {
+          "attempts": 1,
+          "completed_at": 0,
+          "core": {
+            "activation_until": 1795454077,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "text": "Publish is at least 60 seconds after Build."
+              }
+            ],
+            "events": [
+              {
+                "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                "description": "Account A declares that the synthetic build milestone is recorded.",
+                "event_id": 1,
+                "name": "Build"
+              },
+              {
+                "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                "description": "Account B declares that the synthetic publication milestone is recorded.",
+                "event_id": 2,
+                "name": "Publish"
+              }
+            ],
+            "horizon_seconds": 600,
+            "id": 0,
+            "opened_at": 1795450477,
+            "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+            "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+            "title": "Synthetic release declarations"
+          },
+          "expired_at": 0,
+          "expiry_reason": "",
+          "horizon_at": 1795451112,
+          "last_observed_at": 1795450512,
+          "marks": {},
+          "origin_at": 1795450512,
+          "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+          "receipt": {
+            "activation_allowed": true,
+            "assessed_at": 1795450488,
+            "attempt": 1,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "constraints": [
+                  {
+                    "from_id": 2,
+                    "max_seconds": -60,
+                    "to_id": 1
+                  }
+                ],
+                "status": "EXACT"
+              }
+            ],
+            "closure": [
+              [
+                0,
+                540,
+                600
+              ],
+              [
+                0,
+                0,
+                600
+              ],
+              [
+                -60,
+                -60,
+                0
+              ]
+            ],
+            "compiled_constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "decision": "COMPILED",
+            "event_windows": [
+              {
+                "earliest_offset": 0,
+                "event_id": 1,
+                "latest_offset": 540
+              },
+              {
+                "earliest_offset": 60,
+                "event_id": 2,
+                "latest_offset": 600
+              }
+            ],
+            "inspection": {
+              "prompt_chars": 3310,
+              "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+              "prompt_truncated": false,
+              "prompt_utf8_bytes": 3310,
+              "semantic_complete": true
+            },
+            "negative_cycle_nodes": [],
+            "plan": {
+              "activation_until": 1795454077,
+              "clauses": [
+                {
+                  "clause_id": 0,
+                  "text": "Publish is at least 60 seconds after Build."
+                }
+              ],
+              "events": [
+                {
+                  "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                  "description": "Account A declares that the synthetic build milestone is recorded.",
+                  "event_id": 1,
+                  "name": "Build"
+                },
+                {
+                  "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                  "description": "Account B declares that the synthetic publication milestone is recorded.",
+                  "event_id": 2,
+                  "name": "Publish"
+                }
+              ],
+              "horizon_seconds": 600,
+              "id": 0,
+              "opened_at": 1795450477,
+              "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+              "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+              "title": "Synthetic release declarations"
+            },
+            "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+            "schema": "orderwindow-v1",
+            "whole_translation": "EXACT"
+          },
+          "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+          "retired_at": 0,
+          "status": "ACTIVE"
+        },
+        "feasibility": {
+          "can_activate": false,
+          "effective_status": "ACTIVE",
+          "horizon_at": 1795451112,
+          "observed_at": 1795450524,
+          "origin_at": 1795450512,
+          "residual": {
+            "closure": [
+              [
+                0,
+                540,
+                600
+              ],
+              [
+                -12,
+                0,
+                588
+              ],
+              [
+                -72,
+                -60,
+                0
+              ]
+            ],
+            "constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": -12,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -12,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "elapsed_seconds": 12,
+            "feasible": true,
+            "negative_cycle_nodes": [],
+            "remaining_event_ids": [
+              1,
+              2
+            ]
+          },
+          "stored_status": "ACTIVE"
+        }
+      },
+      "expected_rejection": false
+    },
+    {
+      "stage": "build-record",
+      "method": "record_event",
+      "operationHash": "3789cd6070563f87fc2ec2ad406ae23adb9cbe0c4653bd30222d5e4b01cee7d2",
+      "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+      "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+      "txHash": "0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd",
+      "txUrl": "https://explorer-studio-dev.genlayer.com/tx/0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "assertionsPassed": true,
+      "observedAt": "2026-11-23T16:15:45.866Z",
+      "observation": {
+        "plan": {
+          "attempts": 1,
+          "completed_at": 0,
+          "core": {
+            "activation_until": 1795454077,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "text": "Publish is at least 60 seconds after Build."
+              }
+            ],
+            "events": [
+              {
+                "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                "description": "Account A declares that the synthetic build milestone is recorded.",
+                "event_id": 1,
+                "name": "Build"
+              },
+              {
+                "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                "description": "Account B declares that the synthetic publication milestone is recorded.",
+                "event_id": 2,
+                "name": "Publish"
+              }
+            ],
+            "horizon_seconds": 600,
+            "id": 0,
+            "opened_at": 1795450477,
+            "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+            "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+            "title": "Synthetic release declarations"
+          },
+          "expired_at": 0,
+          "expiry_reason": "",
+          "horizon_at": 1795451112,
+          "last_observed_at": 1795450532,
+          "marks": {
+            "1": {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "event_id": 1,
+              "observed_at": 1795450532,
+              "offset_seconds": 20
+            }
+          },
+          "origin_at": 1795450512,
+          "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+          "receipt": {
+            "activation_allowed": true,
+            "assessed_at": 1795450488,
+            "attempt": 1,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "constraints": [
+                  {
+                    "from_id": 2,
+                    "max_seconds": -60,
+                    "to_id": 1
+                  }
+                ],
+                "status": "EXACT"
+              }
+            ],
+            "closure": [
+              [
+                0,
+                540,
+                600
+              ],
+              [
+                0,
+                0,
+                600
+              ],
+              [
+                -60,
+                -60,
+                0
+              ]
+            ],
+            "compiled_constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "decision": "COMPILED",
+            "event_windows": [
+              {
+                "earliest_offset": 0,
+                "event_id": 1,
+                "latest_offset": 540
+              },
+              {
+                "earliest_offset": 60,
+                "event_id": 2,
+                "latest_offset": 600
+              }
+            ],
+            "inspection": {
+              "prompt_chars": 3310,
+              "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+              "prompt_truncated": false,
+              "prompt_utf8_bytes": 3310,
+              "semantic_complete": true
+            },
+            "negative_cycle_nodes": [],
+            "plan": {
+              "activation_until": 1795454077,
+              "clauses": [
+                {
+                  "clause_id": 0,
+                  "text": "Publish is at least 60 seconds after Build."
+                }
+              ],
+              "events": [
+                {
+                  "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                  "description": "Account A declares that the synthetic build milestone is recorded.",
+                  "event_id": 1,
+                  "name": "Build"
+                },
+                {
+                  "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                  "description": "Account B declares that the synthetic publication milestone is recorded.",
+                  "event_id": 2,
+                  "name": "Publish"
+                }
+              ],
+              "horizon_seconds": 600,
+              "id": 0,
+              "opened_at": 1795450477,
+              "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+              "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+              "title": "Synthetic release declarations"
+            },
+            "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+            "schema": "orderwindow-v1",
+            "whole_translation": "EXACT"
+          },
+          "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+          "retired_at": 0,
+          "status": "ACTIVE"
+        },
+        "feasibility": {
+          "can_activate": false,
+          "effective_status": "ACTIVE",
+          "horizon_at": 1795451112,
+          "observed_at": 1795450545,
+          "origin_at": 1795450512,
+          "residual": {
+            "closure": [
+              [
+                0,
+                20,
+                600
+              ],
+              [
+                -20,
+                0,
+                580
+              ],
+              [
+                -80,
+                -60,
+                0
+              ]
+            ],
+            "constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 20,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": -20,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -33,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "elapsed_seconds": 33,
+            "feasible": true,
+            "negative_cycle_nodes": [],
+            "remaining_event_ids": [
+              2
+            ]
+          },
+          "stored_status": "ACTIVE"
+        }
+      },
+      "expected_rejection": false
+    },
+    {
+      "stage": "wrong-actor-publish",
+      "method": "record_event",
+      "operationHash": "c41d50bf959782270cbc15688b776791ac5fa69acbab8a52618ff3d64d0b142c",
+      "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+      "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+      "txHash": "0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+      "txUrl": "https://explorer-studio-dev.genlayer.com/tx/0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+      "successful": false,
+      "intentionalGuardRejection": true,
+      "assertionsPassed": true,
+      "observedAt": "2026-11-23T16:20:26.083Z",
+      "observation": {
+        "before": {
+          "attempts": 1,
+          "completed_at": 0,
+          "core": {
+            "activation_until": 1795454077,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "text": "Publish is at least 60 seconds after Build."
+              }
+            ],
+            "events": [
+              {
+                "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                "description": "Account A declares that the synthetic build milestone is recorded.",
+                "event_id": 1,
+                "name": "Build"
+              },
+              {
+                "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                "description": "Account B declares that the synthetic publication milestone is recorded.",
+                "event_id": 2,
+                "name": "Publish"
+              }
+            ],
+            "horizon_seconds": 600,
+            "id": 0,
+            "opened_at": 1795450477,
+            "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+            "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+            "title": "Synthetic release declarations"
+          },
+          "expired_at": 0,
+          "expiry_reason": "",
+          "horizon_at": 1795451112,
+          "last_observed_at": 1795450532,
+          "marks": {
+            "1": {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "event_id": 1,
+              "observed_at": 1795450532,
+              "offset_seconds": 20
+            }
+          },
+          "origin_at": 1795450512,
+          "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+          "receipt": {
+            "activation_allowed": true,
+            "assessed_at": 1795450488,
+            "attempt": 1,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "constraints": [
+                  {
+                    "from_id": 2,
+                    "max_seconds": -60,
+                    "to_id": 1
+                  }
+                ],
+                "status": "EXACT"
+              }
+            ],
+            "closure": [
+              [
+                0,
+                540,
+                600
+              ],
+              [
+                0,
+                0,
+                600
+              ],
+              [
+                -60,
+                -60,
+                0
+              ]
+            ],
+            "compiled_constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "decision": "COMPILED",
+            "event_windows": [
+              {
+                "earliest_offset": 0,
+                "event_id": 1,
+                "latest_offset": 540
+              },
+              {
+                "earliest_offset": 60,
+                "event_id": 2,
+                "latest_offset": 600
+              }
+            ],
+            "inspection": {
+              "prompt_chars": 3310,
+              "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+              "prompt_truncated": false,
+              "prompt_utf8_bytes": 3310,
+              "semantic_complete": true
+            },
+            "negative_cycle_nodes": [],
+            "plan": {
+              "activation_until": 1795454077,
+              "clauses": [
+                {
+                  "clause_id": 0,
+                  "text": "Publish is at least 60 seconds after Build."
+                }
+              ],
+              "events": [
+                {
+                  "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                  "description": "Account A declares that the synthetic build milestone is recorded.",
+                  "event_id": 1,
+                  "name": "Build"
+                },
+                {
+                  "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                  "description": "Account B declares that the synthetic publication milestone is recorded.",
+                  "event_id": 2,
+                  "name": "Publish"
+                }
+              ],
+              "horizon_seconds": 600,
+              "id": 0,
+              "opened_at": 1795450477,
+              "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+              "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+              "title": "Synthetic release declarations"
+            },
+            "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+            "schema": "orderwindow-v1",
+            "whole_translation": "EXACT"
+          },
+          "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+          "retired_at": 0,
+          "status": "ACTIVE"
+        },
+        "after": {
+          "attempts": 1,
+          "completed_at": 0,
+          "core": {
+            "activation_until": 1795454077,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "text": "Publish is at least 60 seconds after Build."
+              }
+            ],
+            "events": [
+              {
+                "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                "description": "Account A declares that the synthetic build milestone is recorded.",
+                "event_id": 1,
+                "name": "Build"
+              },
+              {
+                "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                "description": "Account B declares that the synthetic publication milestone is recorded.",
+                "event_id": 2,
+                "name": "Publish"
+              }
+            ],
+            "horizon_seconds": 600,
+            "id": 0,
+            "opened_at": 1795450477,
+            "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+            "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+            "title": "Synthetic release declarations"
+          },
+          "expired_at": 0,
+          "expiry_reason": "",
+          "horizon_at": 1795451112,
+          "last_observed_at": 1795450532,
+          "marks": {
+            "1": {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "event_id": 1,
+              "observed_at": 1795450532,
+              "offset_seconds": 20
+            }
+          },
+          "origin_at": 1795450512,
+          "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+          "receipt": {
+            "activation_allowed": true,
+            "assessed_at": 1795450488,
+            "attempt": 1,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "constraints": [
+                  {
+                    "from_id": 2,
+                    "max_seconds": -60,
+                    "to_id": 1
+                  }
+                ],
+                "status": "EXACT"
+              }
+            ],
+            "closure": [
+              [
+                0,
+                540,
+                600
+              ],
+              [
+                0,
+                0,
+                600
+              ],
+              [
+                -60,
+                -60,
+                0
+              ]
+            ],
+            "compiled_constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "decision": "COMPILED",
+            "event_windows": [
+              {
+                "earliest_offset": 0,
+                "event_id": 1,
+                "latest_offset": 540
+              },
+              {
+                "earliest_offset": 60,
+                "event_id": 2,
+                "latest_offset": 600
+              }
+            ],
+            "inspection": {
+              "prompt_chars": 3310,
+              "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+              "prompt_truncated": false,
+              "prompt_utf8_bytes": 3310,
+              "semantic_complete": true
+            },
+            "negative_cycle_nodes": [],
+            "plan": {
+              "activation_until": 1795454077,
+              "clauses": [
+                {
+                  "clause_id": 0,
+                  "text": "Publish is at least 60 seconds after Build."
+                }
+              ],
+              "events": [
+                {
+                  "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                  "description": "Account A declares that the synthetic build milestone is recorded.",
+                  "event_id": 1,
+                  "name": "Build"
+                },
+                {
+                  "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                  "description": "Account B declares that the synthetic publication milestone is recorded.",
+                  "event_id": 2,
+                  "name": "Publish"
+                }
+              ],
+              "horizon_seconds": 600,
+              "id": 0,
+              "opened_at": 1795450477,
+              "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+              "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+              "title": "Synthetic release declarations"
+            },
+            "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+            "schema": "orderwindow-v1",
+            "whole_translation": "EXACT"
+          },
+          "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+          "retired_at": 0,
+          "status": "ACTIVE"
+        },
+        "wrongActor": "0xF325A1BA370788ea774744C98d16CCcB55155Ac0",
+        "expectedActor": "0x205C88f3f1eB6EbB03747788E381c8EcD2af1973",
+        "transactionStatus": "ACCEPTED",
+        "executionResult": "FINISHED_WITH_ERROR"
+      },
+      "expected_rejection": true
+    },
+    {
+      "stage": "publish-record",
+      "method": "record_event",
+      "operationHash": "c41d50bf959782270cbc15688b776791ac5fa69acbab8a52618ff3d64d0b142c",
+      "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+      "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+      "txHash": "0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55",
+      "txUrl": "https://explorer-studio-dev.genlayer.com/tx/0xbd5d0f9f52cb93b03af14e01bdf3ac0d0e4f2751199753aa0ec592909f56ca55",
+      "successful": true,
+      "intentionalGuardRejection": false,
+      "assertionsPassed": true,
+      "observedAt": "2026-11-23T16:21:22.200Z",
+      "observation": {
+        "plan": {
+          "attempts": 1,
+          "completed_at": 1795450861,
+          "core": {
+            "activation_until": 1795454077,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "text": "Publish is at least 60 seconds after Build."
+              }
+            ],
+            "events": [
+              {
+                "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                "description": "Account A declares that the synthetic build milestone is recorded.",
+                "event_id": 1,
+                "name": "Build"
+              },
+              {
+                "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                "description": "Account B declares that the synthetic publication milestone is recorded.",
+                "event_id": 2,
+                "name": "Publish"
+              }
+            ],
+            "horizon_seconds": 600,
+            "id": 0,
+            "opened_at": 1795450477,
+            "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+            "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+            "title": "Synthetic release declarations"
+          },
+          "expired_at": 0,
+          "expiry_reason": "",
+          "horizon_at": 1795451112,
+          "last_observed_at": 1795450861,
+          "marks": {
+            "1": {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "event_id": 1,
+              "observed_at": 1795450532,
+              "offset_seconds": 20
+            },
+            "2": {
+              "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+              "event_id": 2,
+              "observed_at": 1795450861,
+              "offset_seconds": 349
+            }
+          },
+          "origin_at": 1795450512,
+          "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+          "receipt": {
+            "activation_allowed": true,
+            "assessed_at": 1795450488,
+            "attempt": 1,
+            "clauses": [
+              {
+                "clause_id": 0,
+                "constraints": [
+                  {
+                    "from_id": 2,
+                    "max_seconds": -60,
+                    "to_id": 1
+                  }
+                ],
+                "status": "EXACT"
+              }
+            ],
+            "closure": [
+              [
+                0,
+                540,
+                600
+              ],
+              [
+                0,
+                0,
+                600
+              ],
+              [
+                -60,
+                -60,
+                0
+              ]
+            ],
+            "compiled_constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 600,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": 0,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "decision": "COMPILED",
+            "event_windows": [
+              {
+                "earliest_offset": 0,
+                "event_id": 1,
+                "latest_offset": 540
+              },
+              {
+                "earliest_offset": 60,
+                "event_id": 2,
+                "latest_offset": 600
+              }
+            ],
+            "inspection": {
+              "prompt_chars": 3310,
+              "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+              "prompt_truncated": false,
+              "prompt_utf8_bytes": 3310,
+              "semantic_complete": true
+            },
+            "negative_cycle_nodes": [],
+            "plan": {
+              "activation_until": 1795454077,
+              "clauses": [
+                {
+                  "clause_id": 0,
+                  "text": "Publish is at least 60 seconds after Build."
+                }
+              ],
+              "events": [
+                {
+                  "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+                  "description": "Account A declares that the synthetic build milestone is recorded.",
+                  "event_id": 1,
+                  "name": "Build"
+                },
+                {
+                  "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+                  "description": "Account B declares that the synthetic publication milestone is recorded.",
+                  "event_id": 2,
+                  "name": "Publish"
+                }
+              ],
+              "horizon_seconds": 600,
+              "id": 0,
+              "opened_at": 1795450477,
+              "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+              "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+              "title": "Synthetic release declarations"
+            },
+            "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+            "schema": "orderwindow-v1",
+            "whole_translation": "EXACT"
+          },
+          "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+          "retired_at": 0,
+          "status": "COMPLETED"
+        },
+        "feasibility": {
+          "can_activate": false,
+          "effective_status": "COMPLETED",
+          "horizon_at": 1795451112,
+          "observed_at": 1795450882,
+          "origin_at": 1795450512,
+          "residual": {
+            "closure": [
+              [
+                0,
+                20,
+                349
+              ],
+              [
+                -20,
+                0,
+                329
+              ],
+              [
+                -349,
+                -329,
+                0
+              ]
+            ],
+            "constraints": [
+              {
+                "from_id": 0,
+                "max_seconds": 20,
+                "to_id": 1
+              },
+              {
+                "from_id": 0,
+                "max_seconds": 349,
+                "to_id": 2
+              },
+              {
+                "from_id": 1,
+                "max_seconds": -20,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -349,
+                "to_id": 0
+              },
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "elapsed_seconds": 370,
+            "feasible": true,
+            "negative_cycle_nodes": [],
+            "remaining_event_ids": []
+          },
+          "stored_status": "COMPLETED"
+        }
+      },
+      "expected_rejection": false
+    }
+  ],
+  "finalStats": {
+    "contract_version": "1.0.0",
+    "event_marks": 2,
+    "max_attempts": 3,
+    "max_bounds_per_clause": 4,
+    "max_clauses": 5,
+    "max_events": 5,
+    "max_prompt_chars": 48000,
+    "max_prompt_utf8_bytes": 65000,
+    "plans": 1,
+    "receipt_schema": "orderwindow-v1"
+  },
+  "verification": "Full exact temporal compilation, owner acceptance of receipt hash and one-time origin; authenticated two-actor marks separated by at least 60 real seconds complete a feasible residual schedule. Wrong actor Publish write rejects without changing state.",
+  "planId": 0,
+  "actors": {
+    "ownerBuild": "0xF325A1BA370788ea774744C98d16CCcB55155Ac0",
+    "publisher": "0x205C88f3f1eB6EbB03747788E381c8EcD2af1973"
+  },
+  "receiptHash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+  "actualMarkSeparationSeconds": 329,
+  "previewBuild": {
+    "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+    "admissible": false,
+    "event_id": 1,
+    "observed_at": 1795450783,
+    "plan_id": 0,
+    "residual": null
+  },
+  "previewPublish": {
+    "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+    "admissible": true,
+    "event_id": 2,
+    "observed_at": 1795450829,
+    "plan_id": 0,
+    "residual": {
+      "closure": [
+        [
+          0,
+          20,
+          317
+        ],
+        [
+          -20,
+          0,
+          297
+        ],
+        [
+          -317,
+          -297,
+          0
+        ]
+      ],
+      "constraints": [
+        {
+          "from_id": 0,
+          "max_seconds": 20,
+          "to_id": 1
+        },
+        {
+          "from_id": 0,
+          "max_seconds": 317,
+          "to_id": 2
+        },
+        {
+          "from_id": 1,
+          "max_seconds": -20,
+          "to_id": 0
+        },
+        {
+          "from_id": 2,
+          "max_seconds": -317,
+          "to_id": 0
+        },
+        {
+          "from_id": 2,
+          "max_seconds": -60,
+          "to_id": 1
+        }
+      ],
+      "elapsed_seconds": 317,
+      "feasible": true,
+      "negative_cycle_nodes": [],
+      "remaining_event_ids": []
+    }
+  },
+  "compiled": {
+    "plan": {
+      "attempts": 1,
+      "completed_at": 0,
+      "core": {
+        "activation_until": 1795454077,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "text": "Publish is at least 60 seconds after Build."
+          }
+        ],
+        "events": [
+          {
+            "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "description": "Account A declares that the synthetic build milestone is recorded.",
+            "event_id": 1,
+            "name": "Build"
+          },
+          {
+            "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+            "description": "Account B declares that the synthetic publication milestone is recorded.",
+            "event_id": 2,
+            "name": "Publish"
+          }
+        ],
+        "horizon_seconds": 600,
+        "id": 0,
+        "opened_at": 1795450477,
+        "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+        "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+        "title": "Synthetic release declarations"
+      },
+      "expired_at": 0,
+      "expiry_reason": "",
+      "horizon_at": null,
+      "last_observed_at": 1795450488,
+      "marks": {},
+      "origin_at": null,
+      "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+      "receipt": {
+        "activation_allowed": true,
+        "assessed_at": 1795450488,
+        "attempt": 1,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "constraints": [
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "status": "EXACT"
+          }
+        ],
+        "closure": [
+          [
+            0,
+            540,
+            600
+          ],
+          [
+            0,
+            0,
+            600
+          ],
+          [
+            -60,
+            -60,
+            0
+          ]
+        ],
+        "compiled_constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "decision": "COMPILED",
+        "event_windows": [
+          {
+            "earliest_offset": 0,
+            "event_id": 1,
+            "latest_offset": 540
+          },
+          {
+            "earliest_offset": 60,
+            "event_id": 2,
+            "latest_offset": 600
+          }
+        ],
+        "inspection": {
+          "prompt_chars": 3310,
+          "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+          "prompt_truncated": false,
+          "prompt_utf8_bytes": 3310,
+          "semantic_complete": true
+        },
+        "negative_cycle_nodes": [],
+        "plan": {
+          "activation_until": 1795454077,
+          "clauses": [
+            {
+              "clause_id": 0,
+              "text": "Publish is at least 60 seconds after Build."
+            }
+          ],
+          "events": [
+            {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "description": "Account A declares that the synthetic build milestone is recorded.",
+              "event_id": 1,
+              "name": "Build"
+            },
+            {
+              "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+              "description": "Account B declares that the synthetic publication milestone is recorded.",
+              "event_id": 2,
+              "name": "Publish"
+            }
+          ],
+          "horizon_seconds": 600,
+          "id": 0,
+          "opened_at": 1795450477,
+          "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+          "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+          "title": "Synthetic release declarations"
+        },
+        "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+        "schema": "orderwindow-v1",
+        "whole_translation": "EXACT"
+      },
+      "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+      "retired_at": 0,
+      "status": "COMPILED"
+    },
+    "attempt": {
+      "activation_allowed": true,
+      "assessed_at": 1795450488,
+      "attempt": 1,
+      "clauses": [
+        {
+          "clause_id": 0,
+          "constraints": [
+            {
+              "from_id": 2,
+              "max_seconds": -60,
+              "to_id": 1
+            }
+          ],
+          "status": "EXACT"
+        }
+      ],
+      "closure": [
+        [
+          0,
+          540,
+          600
+        ],
+        [
+          0,
+          0,
+          600
+        ],
+        [
+          -60,
+          -60,
+          0
+        ]
+      ],
+      "compiled_constraints": [
+        {
+          "from_id": 0,
+          "max_seconds": 600,
+          "to_id": 1
+        },
+        {
+          "from_id": 0,
+          "max_seconds": 600,
+          "to_id": 2
+        },
+        {
+          "from_id": 1,
+          "max_seconds": 0,
+          "to_id": 0
+        },
+        {
+          "from_id": 2,
+          "max_seconds": 0,
+          "to_id": 0
+        },
+        {
+          "from_id": 2,
+          "max_seconds": -60,
+          "to_id": 1
+        }
+      ],
+      "decision": "COMPILED",
+      "event_windows": [
+        {
+          "earliest_offset": 0,
+          "event_id": 1,
+          "latest_offset": 540
+        },
+        {
+          "earliest_offset": 60,
+          "event_id": 2,
+          "latest_offset": 600
+        }
+      ],
+      "inspection": {
+        "prompt_chars": 3310,
+        "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+        "prompt_truncated": false,
+        "prompt_utf8_bytes": 3310,
+        "semantic_complete": true
+      },
+      "negative_cycle_nodes": [],
+      "plan": {
+        "activation_until": 1795454077,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "text": "Publish is at least 60 seconds after Build."
+          }
+        ],
+        "events": [
+          {
+            "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "description": "Account A declares that the synthetic build milestone is recorded.",
+            "event_id": 1,
+            "name": "Build"
+          },
+          {
+            "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+            "description": "Account B declares that the synthetic publication milestone is recorded.",
+            "event_id": 2,
+            "name": "Publish"
+          }
+        ],
+        "horizon_seconds": 600,
+        "id": 0,
+        "opened_at": 1795450477,
+        "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+        "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+        "title": "Synthetic release declarations"
+      },
+      "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+      "schema": "orderwindow-v1",
+      "whole_translation": "EXACT"
+    }
+  },
+  "activated": {
+    "plan": {
+      "attempts": 1,
+      "completed_at": 0,
+      "core": {
+        "activation_until": 1795454077,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "text": "Publish is at least 60 seconds after Build."
+          }
+        ],
+        "events": [
+          {
+            "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "description": "Account A declares that the synthetic build milestone is recorded.",
+            "event_id": 1,
+            "name": "Build"
+          },
+          {
+            "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+            "description": "Account B declares that the synthetic publication milestone is recorded.",
+            "event_id": 2,
+            "name": "Publish"
+          }
+        ],
+        "horizon_seconds": 600,
+        "id": 0,
+        "opened_at": 1795450477,
+        "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+        "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+        "title": "Synthetic release declarations"
+      },
+      "expired_at": 0,
+      "expiry_reason": "",
+      "horizon_at": 1795451112,
+      "last_observed_at": 1795450512,
+      "marks": {},
+      "origin_at": 1795450512,
+      "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+      "receipt": {
+        "activation_allowed": true,
+        "assessed_at": 1795450488,
+        "attempt": 1,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "constraints": [
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "status": "EXACT"
+          }
+        ],
+        "closure": [
+          [
+            0,
+            540,
+            600
+          ],
+          [
+            0,
+            0,
+            600
+          ],
+          [
+            -60,
+            -60,
+            0
+          ]
+        ],
+        "compiled_constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "decision": "COMPILED",
+        "event_windows": [
+          {
+            "earliest_offset": 0,
+            "event_id": 1,
+            "latest_offset": 540
+          },
+          {
+            "earliest_offset": 60,
+            "event_id": 2,
+            "latest_offset": 600
+          }
+        ],
+        "inspection": {
+          "prompt_chars": 3310,
+          "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+          "prompt_truncated": false,
+          "prompt_utf8_bytes": 3310,
+          "semantic_complete": true
+        },
+        "negative_cycle_nodes": [],
+        "plan": {
+          "activation_until": 1795454077,
+          "clauses": [
+            {
+              "clause_id": 0,
+              "text": "Publish is at least 60 seconds after Build."
+            }
+          ],
+          "events": [
+            {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "description": "Account A declares that the synthetic build milestone is recorded.",
+              "event_id": 1,
+              "name": "Build"
+            },
+            {
+              "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+              "description": "Account B declares that the synthetic publication milestone is recorded.",
+              "event_id": 2,
+              "name": "Publish"
+            }
+          ],
+          "horizon_seconds": 600,
+          "id": 0,
+          "opened_at": 1795450477,
+          "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+          "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+          "title": "Synthetic release declarations"
+        },
+        "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+        "schema": "orderwindow-v1",
+        "whole_translation": "EXACT"
+      },
+      "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+      "retired_at": 0,
+      "status": "ACTIVE"
+    },
+    "feasibility": {
+      "can_activate": false,
+      "effective_status": "ACTIVE",
+      "horizon_at": 1795451112,
+      "observed_at": 1795450524,
+      "origin_at": 1795450512,
+      "residual": {
+        "closure": [
+          [
+            0,
+            540,
+            600
+          ],
+          [
+            -12,
+            0,
+            588
+          ],
+          [
+            -72,
+            -60,
+            0
+          ]
+        ],
+        "constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": -12,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -12,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "elapsed_seconds": 12,
+        "feasible": true,
+        "negative_cycle_nodes": [],
+        "remaining_event_ids": [
+          1,
+          2
+        ]
+      },
+      "stored_status": "ACTIVE"
+    }
+  },
+  "build": {
+    "plan": {
+      "attempts": 1,
+      "completed_at": 0,
+      "core": {
+        "activation_until": 1795454077,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "text": "Publish is at least 60 seconds after Build."
+          }
+        ],
+        "events": [
+          {
+            "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "description": "Account A declares that the synthetic build milestone is recorded.",
+            "event_id": 1,
+            "name": "Build"
+          },
+          {
+            "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+            "description": "Account B declares that the synthetic publication milestone is recorded.",
+            "event_id": 2,
+            "name": "Publish"
+          }
+        ],
+        "horizon_seconds": 600,
+        "id": 0,
+        "opened_at": 1795450477,
+        "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+        "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+        "title": "Synthetic release declarations"
+      },
+      "expired_at": 0,
+      "expiry_reason": "",
+      "horizon_at": 1795451112,
+      "last_observed_at": 1795450532,
+      "marks": {
+        "1": {
+          "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "event_id": 1,
+          "observed_at": 1795450532,
+          "offset_seconds": 20
+        }
+      },
+      "origin_at": 1795450512,
+      "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+      "receipt": {
+        "activation_allowed": true,
+        "assessed_at": 1795450488,
+        "attempt": 1,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "constraints": [
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "status": "EXACT"
+          }
+        ],
+        "closure": [
+          [
+            0,
+            540,
+            600
+          ],
+          [
+            0,
+            0,
+            600
+          ],
+          [
+            -60,
+            -60,
+            0
+          ]
+        ],
+        "compiled_constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "decision": "COMPILED",
+        "event_windows": [
+          {
+            "earliest_offset": 0,
+            "event_id": 1,
+            "latest_offset": 540
+          },
+          {
+            "earliest_offset": 60,
+            "event_id": 2,
+            "latest_offset": 600
+          }
+        ],
+        "inspection": {
+          "prompt_chars": 3310,
+          "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+          "prompt_truncated": false,
+          "prompt_utf8_bytes": 3310,
+          "semantic_complete": true
+        },
+        "negative_cycle_nodes": [],
+        "plan": {
+          "activation_until": 1795454077,
+          "clauses": [
+            {
+              "clause_id": 0,
+              "text": "Publish is at least 60 seconds after Build."
+            }
+          ],
+          "events": [
+            {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "description": "Account A declares that the synthetic build milestone is recorded.",
+              "event_id": 1,
+              "name": "Build"
+            },
+            {
+              "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+              "description": "Account B declares that the synthetic publication milestone is recorded.",
+              "event_id": 2,
+              "name": "Publish"
+            }
+          ],
+          "horizon_seconds": 600,
+          "id": 0,
+          "opened_at": 1795450477,
+          "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+          "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+          "title": "Synthetic release declarations"
+        },
+        "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+        "schema": "orderwindow-v1",
+        "whole_translation": "EXACT"
+      },
+      "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+      "retired_at": 0,
+      "status": "ACTIVE"
+    },
+    "feasibility": {
+      "can_activate": false,
+      "effective_status": "ACTIVE",
+      "horizon_at": 1795451112,
+      "observed_at": 1795450545,
+      "origin_at": 1795450512,
+      "residual": {
+        "closure": [
+          [
+            0,
+            20,
+            600
+          ],
+          [
+            -20,
+            0,
+            580
+          ],
+          [
+            -80,
+            -60,
+            0
+          ]
+        ],
+        "constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 20,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": -20,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -33,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "elapsed_seconds": 33,
+        "feasible": true,
+        "negative_cycle_nodes": [],
+        "remaining_event_ids": [
+          2
+        ]
+      },
+      "stored_status": "ACTIVE"
+    }
+  },
+  "guardRejection": {
+    "before": {
+      "attempts": 1,
+      "completed_at": 0,
+      "core": {
+        "activation_until": 1795454077,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "text": "Publish is at least 60 seconds after Build."
+          }
+        ],
+        "events": [
+          {
+            "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "description": "Account A declares that the synthetic build milestone is recorded.",
+            "event_id": 1,
+            "name": "Build"
+          },
+          {
+            "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+            "description": "Account B declares that the synthetic publication milestone is recorded.",
+            "event_id": 2,
+            "name": "Publish"
+          }
+        ],
+        "horizon_seconds": 600,
+        "id": 0,
+        "opened_at": 1795450477,
+        "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+        "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+        "title": "Synthetic release declarations"
+      },
+      "expired_at": 0,
+      "expiry_reason": "",
+      "horizon_at": 1795451112,
+      "last_observed_at": 1795450532,
+      "marks": {
+        "1": {
+          "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "event_id": 1,
+          "observed_at": 1795450532,
+          "offset_seconds": 20
+        }
+      },
+      "origin_at": 1795450512,
+      "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+      "receipt": {
+        "activation_allowed": true,
+        "assessed_at": 1795450488,
+        "attempt": 1,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "constraints": [
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "status": "EXACT"
+          }
+        ],
+        "closure": [
+          [
+            0,
+            540,
+            600
+          ],
+          [
+            0,
+            0,
+            600
+          ],
+          [
+            -60,
+            -60,
+            0
+          ]
+        ],
+        "compiled_constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "decision": "COMPILED",
+        "event_windows": [
+          {
+            "earliest_offset": 0,
+            "event_id": 1,
+            "latest_offset": 540
+          },
+          {
+            "earliest_offset": 60,
+            "event_id": 2,
+            "latest_offset": 600
+          }
+        ],
+        "inspection": {
+          "prompt_chars": 3310,
+          "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+          "prompt_truncated": false,
+          "prompt_utf8_bytes": 3310,
+          "semantic_complete": true
+        },
+        "negative_cycle_nodes": [],
+        "plan": {
+          "activation_until": 1795454077,
+          "clauses": [
+            {
+              "clause_id": 0,
+              "text": "Publish is at least 60 seconds after Build."
+            }
+          ],
+          "events": [
+            {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "description": "Account A declares that the synthetic build milestone is recorded.",
+              "event_id": 1,
+              "name": "Build"
+            },
+            {
+              "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+              "description": "Account B declares that the synthetic publication milestone is recorded.",
+              "event_id": 2,
+              "name": "Publish"
+            }
+          ],
+          "horizon_seconds": 600,
+          "id": 0,
+          "opened_at": 1795450477,
+          "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+          "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+          "title": "Synthetic release declarations"
+        },
+        "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+        "schema": "orderwindow-v1",
+        "whole_translation": "EXACT"
+      },
+      "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+      "retired_at": 0,
+      "status": "ACTIVE"
+    },
+    "after": {
+      "attempts": 1,
+      "completed_at": 0,
+      "core": {
+        "activation_until": 1795454077,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "text": "Publish is at least 60 seconds after Build."
+          }
+        ],
+        "events": [
+          {
+            "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "description": "Account A declares that the synthetic build milestone is recorded.",
+            "event_id": 1,
+            "name": "Build"
+          },
+          {
+            "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+            "description": "Account B declares that the synthetic publication milestone is recorded.",
+            "event_id": 2,
+            "name": "Publish"
+          }
+        ],
+        "horizon_seconds": 600,
+        "id": 0,
+        "opened_at": 1795450477,
+        "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+        "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+        "title": "Synthetic release declarations"
+      },
+      "expired_at": 0,
+      "expiry_reason": "",
+      "horizon_at": 1795451112,
+      "last_observed_at": 1795450532,
+      "marks": {
+        "1": {
+          "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "event_id": 1,
+          "observed_at": 1795450532,
+          "offset_seconds": 20
+        }
+      },
+      "origin_at": 1795450512,
+      "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+      "receipt": {
+        "activation_allowed": true,
+        "assessed_at": 1795450488,
+        "attempt": 1,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "constraints": [
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "status": "EXACT"
+          }
+        ],
+        "closure": [
+          [
+            0,
+            540,
+            600
+          ],
+          [
+            0,
+            0,
+            600
+          ],
+          [
+            -60,
+            -60,
+            0
+          ]
+        ],
+        "compiled_constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "decision": "COMPILED",
+        "event_windows": [
+          {
+            "earliest_offset": 0,
+            "event_id": 1,
+            "latest_offset": 540
+          },
+          {
+            "earliest_offset": 60,
+            "event_id": 2,
+            "latest_offset": 600
+          }
+        ],
+        "inspection": {
+          "prompt_chars": 3310,
+          "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+          "prompt_truncated": false,
+          "prompt_utf8_bytes": 3310,
+          "semantic_complete": true
+        },
+        "negative_cycle_nodes": [],
+        "plan": {
+          "activation_until": 1795454077,
+          "clauses": [
+            {
+              "clause_id": 0,
+              "text": "Publish is at least 60 seconds after Build."
+            }
+          ],
+          "events": [
+            {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "description": "Account A declares that the synthetic build milestone is recorded.",
+              "event_id": 1,
+              "name": "Build"
+            },
+            {
+              "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+              "description": "Account B declares that the synthetic publication milestone is recorded.",
+              "event_id": 2,
+              "name": "Publish"
+            }
+          ],
+          "horizon_seconds": 600,
+          "id": 0,
+          "opened_at": 1795450477,
+          "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+          "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+          "title": "Synthetic release declarations"
+        },
+        "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+        "schema": "orderwindow-v1",
+        "whole_translation": "EXACT"
+      },
+      "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+      "retired_at": 0,
+      "status": "ACTIVE"
+    },
+    "wrongActor": "0xF325A1BA370788ea774744C98d16CCcB55155Ac0",
+    "expectedActor": "0x205C88f3f1eB6EbB03747788E381c8EcD2af1973",
+    "transactionStatus": "ACCEPTED",
+    "executionResult": "FINISHED_WITH_ERROR"
+  },
+  "completed": {
+    "plan": {
+      "attempts": 1,
+      "completed_at": 1795450861,
+      "core": {
+        "activation_until": 1795454077,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "text": "Publish is at least 60 seconds after Build."
+          }
+        ],
+        "events": [
+          {
+            "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "description": "Account A declares that the synthetic build milestone is recorded.",
+            "event_id": 1,
+            "name": "Build"
+          },
+          {
+            "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+            "description": "Account B declares that the synthetic publication milestone is recorded.",
+            "event_id": 2,
+            "name": "Publish"
+          }
+        ],
+        "horizon_seconds": 600,
+        "id": 0,
+        "opened_at": 1795450477,
+        "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+        "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+        "title": "Synthetic release declarations"
+      },
+      "expired_at": 0,
+      "expiry_reason": "",
+      "horizon_at": 1795451112,
+      "last_observed_at": 1795450861,
+      "marks": {
+        "1": {
+          "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "event_id": 1,
+          "observed_at": 1795450532,
+          "offset_seconds": 20
+        },
+        "2": {
+          "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+          "event_id": 2,
+          "observed_at": 1795450861,
+          "offset_seconds": 349
+        }
+      },
+      "origin_at": 1795450512,
+      "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+      "receipt": {
+        "activation_allowed": true,
+        "assessed_at": 1795450488,
+        "attempt": 1,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "constraints": [
+              {
+                "from_id": 2,
+                "max_seconds": -60,
+                "to_id": 1
+              }
+            ],
+            "status": "EXACT"
+          }
+        ],
+        "closure": [
+          [
+            0,
+            540,
+            600
+          ],
+          [
+            0,
+            0,
+            600
+          ],
+          [
+            -60,
+            -60,
+            0
+          ]
+        ],
+        "compiled_constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 600,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": 0,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "decision": "COMPILED",
+        "event_windows": [
+          {
+            "earliest_offset": 0,
+            "event_id": 1,
+            "latest_offset": 540
+          },
+          {
+            "earliest_offset": 60,
+            "event_id": 2,
+            "latest_offset": 600
+          }
+        ],
+        "inspection": {
+          "prompt_chars": 3310,
+          "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+          "prompt_truncated": false,
+          "prompt_utf8_bytes": 3310,
+          "semantic_complete": true
+        },
+        "negative_cycle_nodes": [],
+        "plan": {
+          "activation_until": 1795454077,
+          "clauses": [
+            {
+              "clause_id": 0,
+              "text": "Publish is at least 60 seconds after Build."
+            }
+          ],
+          "events": [
+            {
+              "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+              "description": "Account A declares that the synthetic build milestone is recorded.",
+              "event_id": 1,
+              "name": "Build"
+            },
+            {
+              "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+              "description": "Account B declares that the synthetic publication milestone is recorded.",
+              "event_id": 2,
+              "name": "Publish"
+            }
+          ],
+          "horizon_seconds": 600,
+          "id": 0,
+          "opened_at": 1795450477,
+          "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+          "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+          "title": "Synthetic release declarations"
+        },
+        "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+        "schema": "orderwindow-v1",
+        "whole_translation": "EXACT"
+      },
+      "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+      "retired_at": 0,
+      "status": "COMPLETED"
+    },
+    "feasibility": {
+      "can_activate": false,
+      "effective_status": "COMPLETED",
+      "horizon_at": 1795451112,
+      "observed_at": 1795450882,
+      "origin_at": 1795450512,
+      "residual": {
+        "closure": [
+          [
+            0,
+            20,
+            349
+          ],
+          [
+            -20,
+            0,
+            329
+          ],
+          [
+            -349,
+            -329,
+            0
+          ]
+        ],
+        "constraints": [
+          {
+            "from_id": 0,
+            "max_seconds": 20,
+            "to_id": 1
+          },
+          {
+            "from_id": 0,
+            "max_seconds": 349,
+            "to_id": 2
+          },
+          {
+            "from_id": 1,
+            "max_seconds": -20,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -349,
+            "to_id": 0
+          },
+          {
+            "from_id": 2,
+            "max_seconds": -60,
+            "to_id": 1
+          }
+        ],
+        "elapsed_seconds": 370,
+        "feasible": true,
+        "negative_cycle_nodes": [],
+        "remaining_event_ids": []
+      },
+      "stored_status": "COMPLETED"
+    }
+  },
+  "completedAt": "2026-11-23T16:22:00.882Z",
+  "sourceCommit": "52adfb7ce4ea7533aa1db94ce7f81f8bb8443c93",
+  "immutableSourceUrl": "https://github.com/zakazaka95/OrderWindow/blob/52adfb7ce4ea7533aa1db94ce7f81f8bb8443c93/OrderWindow.py",
+  "guardExecution": {
+    "stage": "wrong-actor-publish",
+    "hash": "0xe8ae87a1faa9d70aa3a6ec755cdb674a2db6c39746a1c50c787ac6709bb43f63",
+    "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+    "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+    "expected_rejection": true,
+    "status": "FINALIZED",
+    "executionResult": "FINISHED_WITH_ERROR",
+    "observedRollbackReason": "Only its assigned actor may mark an unrecorded event in an active plan",
+    "consensusLeaderObservations": [
+      {
+        "resultStatus": "rollback",
+        "rollbackReason": "Only its assigned actor may mark an unrecorded event in an active plan",
+        "executionResult": "ERROR"
+      },
+      {
+        "resultStatus": "rollback",
+        "rollbackReason": "Only its assigned actor may mark an unrecorded event in an active plan",
+        "executionResult": "ERROR"
+      }
+    ],
+    "storedStateUnchanged": true,
+    "storedBeforeSha256": "2ee546f545d992fa9495fa6b20732d3d79151457a94bd0ff86e40b5ad5fa43f6",
+    "storedAfterSha256": "2ee546f545d992fa9495fa6b20732d3d79151457a94bd0ff86e40b5ad5fa43f6"
+  },
+  "proofScope": "Complete canonical persisted synthetic records/receipts. No account secrets or raw provider transaction dumps included. Expected guard rejection is explicitly separate from successful state changes."
+}

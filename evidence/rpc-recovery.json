@@ -1,0 +1,183 @@
+{
+  "name": "orderwindow",
+  "checkedAt": "2026-11-23T16:19:08.930Z",
+  "declinedStage": "wrong-actor-publish",
+  "observedRpcError": "eth_sendRawTransaction: Rate limit exceeded: 30 requests per minute",
+  "previousKnownTransactionHash": "0x97d3fa494f5cc03f6941b94726fce7000eae7cfaf638a7736cfb2d31b402c5fd",
+  "previousKnownTransactionNonce": 4,
+  "confirmedNextNonce": 5,
+  "pendingNextNonce": 5,
+  "noUnknownAcceptedTransaction": true,
+  "state": {
+    "attempts": 1,
+    "completed_at": 0,
+    "core": {
+      "activation_until": 1795454077,
+      "clauses": [
+        {
+          "clause_id": 0,
+          "text": "Publish is at least 60 seconds after Build."
+        }
+      ],
+      "events": [
+        {
+          "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+          "description": "Account A declares that the synthetic build milestone is recorded.",
+          "event_id": 1,
+          "name": "Build"
+        },
+        {
+          "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+          "description": "Account B declares that the synthetic publication milestone is recorded.",
+          "event_id": 2,
+          "name": "Publish"
+        }
+      ],
+      "horizon_seconds": 600,
+      "id": 0,
+      "opened_at": 1795450477,
+      "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+      "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+      "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+      "title": "Synthetic release declarations"
+    },
+    "expired_at": 0,
+    "expiry_reason": "",
+    "horizon_at": 1795451112,
+    "last_observed_at": 1795450532,
+    "marks": {
+      "1": {
+        "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "event_id": 1,
+        "observed_at": 1795450532,
+        "offset_seconds": 20
+      }
+    },
+    "origin_at": 1795450512,
+    "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+    "receipt": {
+      "activation_allowed": true,
+      "assessed_at": 1795450488,
+      "attempt": 1,
+      "clauses": [
+        {
+          "clause_id": 0,
+          "constraints": [
+            {
+              "from_id": 2,
+              "max_seconds": -60,
+              "to_id": 1
+            }
+          ],
+          "status": "EXACT"
+        }
+      ],
+      "closure": [
+        [
+          0,
+          540,
+          600
+        ],
+        [
+          0,
+          0,
+          600
+        ],
+        [
+          -60,
+          -60,
+          0
+        ]
+      ],
+      "compiled_constraints": [
+        {
+          "from_id": 0,
+          "max_seconds": 600,
+          "to_id": 1
+        },
+        {
+          "from_id": 0,
+          "max_seconds": 600,
+          "to_id": 2
+        },
+        {
+          "from_id": 1,
+          "max_seconds": 0,
+          "to_id": 0
+        },
+        {
+          "from_id": 2,
+          "max_seconds": 0,
+          "to_id": 0
+        },
+        {
+          "from_id": 2,
+          "max_seconds": -60,
+          "to_id": 1
+        }
+      ],
+      "decision": "COMPILED",
+      "event_windows": [
+        {
+          "earliest_offset": 0,
+          "event_id": 1,
+          "latest_offset": 540
+        },
+        {
+          "earliest_offset": 60,
+          "event_id": 2,
+          "latest_offset": 600
+        }
+      ],
+      "inspection": {
+        "prompt_chars": 3310,
+        "prompt_sha256": "4e80271f74713e290f3ba7f04bd64e612f2d850c13bcbdc486a354e3090869b7",
+        "prompt_truncated": false,
+        "prompt_utf8_bytes": 3310,
+        "semantic_complete": true
+      },
+      "negative_cycle_nodes": [],
+      "plan": {
+        "activation_until": 1795454077,
+        "clauses": [
+          {
+            "clause_id": 0,
+            "text": "Publish is at least 60 seconds after Build."
+          }
+        ],
+        "events": [
+          {
+            "actor": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+            "description": "Account A declares that the synthetic build milestone is recorded.",
+            "event_id": 1,
+            "name": "Build"
+          },
+          {
+            "actor": "0x205c88f3f1eb6ebb03747788e381c8ecd2af1973",
+            "description": "Account B declares that the synthetic publication milestone is recorded.",
+            "event_id": 2,
+            "name": "Publish"
+          }
+        ],
+        "horizon_seconds": 600,
+        "id": 0,
+        "opened_at": 1795450477,
+        "origin_rule": "SINGLE_OWNER_ACTIVATION_TRANSACTION_INTEGER_SECOND",
+        "owner": "0xf325a1ba370788ea774744c98d16cccb55155ac0",
+        "purpose": "Coordinate authenticated build and publication declarations; no external work verification.",
+        "title": "Synthetic release declarations"
+      },
+      "plan_hash": "49c6a06a42421ba52c39474ed3bfbd052dcf7df7a7ec141dc8ab9c52d00bb5fa",
+      "schema": "orderwindow-v1",
+      "whole_translation": "EXACT"
+    },
+    "receipt_hash": "c0a1f77ac293e897175016b0ed98ce76550f1544a0f3a25a860bde1d060e625c",
+    "retired_at": 0,
+    "status": "ACTIVE"
+  },
+  "recovery": "Resume once using stable labels; no receipt/model result exists for the declined call. Only one demo process will run at a time with at least 3500 ms between every RPC fetch.",
+  "chainId": 61997,
+  "contractAddress": "0x51Fb8a926d289C9571b504332B04C3FeaF95D523",
+  "sourceSha256": "446ee9c880d8d927041249938ae45c23555fedc7f77b5ae37c1b543e9c8e4aba",
+  "scope": "Pre-hash RPC rate-limit decline, reconciled before a single resumed submission. This record is separate from onchain semantic outcomes and the intentional guard rejection."
+}

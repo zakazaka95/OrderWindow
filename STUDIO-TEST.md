@@ -1,10 +1,10 @@
-# OrderWindow: live verification to perform later
+# OrderWindow reproducible Studio walkthrough
 
-Status: **NOT RUN**. No contract address or transaction result is claimed. This checklist is for a future explicitly authorized publication/deployment session. Do not submit this local draft yet.
+This is the reproducible procedure. Actual execution results are recorded separately in [DEPLOYMENT.md](DEPLOYMENT.md); an expected branch below is not evidence that it occurred. Use synthetic actor declarations and the exact released source.
 
 ## 1. Match the artifact
 
-Verify the source SHA-256 against `DEPLOYMENT.md`. Publish the complete package and pin an immutable source commit when publication is authorized. Deploy that exact `OrderWindow.py`, including its two dependency lines, on the intended current GenLayer Studio network. Record the network, address, deployment transaction, source commit/hash and observed deployment status. Compare Explorer's deployed source to the tracked file before using it as evidence.
+Verify the source SHA-256 against [DEPLOYMENT.md](DEPLOYMENT.md). Deploy that exact `OrderWindow.py`, including its pinned v0.4.0 runner header, on the intended current GenLayer Studio network. Record the network, address, deployment transaction, source commit/hash and observed deployment status. Compare the complete deployed source to the immutable tracked file before using it as evidence. Native source-schema success alone does not demonstrate a successful first write.
 
 The constructor takes no parameters. Every call below transfers **0 GEN value**; the network may charge test transaction fees. No contract method makes an external purchase or transfers funds.
 
@@ -44,6 +44,12 @@ Before `activation_until`, A calls `activate_plan(id, receipt_hash)` with the ex
 Use a sufficiently long horizon for consensus latency. If a deadline is missed, capture the honest UNSCHEDULABLE/EXPIRED outcome and open a fresh plan; do not claim the failed attempt completed.
 
 ## 5. Focused failure demonstration
+
+This and section 6 are additional procedures, not claims that the release ran
+them. The primary release walkthrough uses the unchanged 600-second horizon,
+3,600-second activation window, 60-second clause and two distinct actors from
+sections 2–4. Consult DEPLOYMENT.md for the actual completed stages and guard
+results; do not count optional local-only branches as live transactions.
 
 Open a separate plan with the same clause and a 120-second horizon. Compile and activate it. At an offset greater than60, attempt Build. It must fail because a later Publish separated by60 seconds cannot fit, although Build alone is within120. Capture the unchanged stored plan before/after. This short plan is deliberately timing-sensitive and may be impractical on a slow network; the deterministic local test reproduces it without network timing assumptions.
 
